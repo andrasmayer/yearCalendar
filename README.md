@@ -3,13 +3,26 @@ The calendar is as an ES6 module purely made with HTML Javascript and CSS.
 
 sample=> 
 
-const {YearlyCalendar} = await import(`./YearlyCalendar/YearlyCalendar.js`) //call the library
-const target = "#calendarCtn"                                               //set the HTML destination element
-const year = new Date().getFullYear()                                       //set starting year 
-const calendar = new YearlyCalendar({year:year,size:"compact"})             //fire class and set size. compact/full
-const target_ = document.querySelector(target)                              //define variable for target
-target_.innerHTML = calendar.init()                                         //run init() to get HTML
-calendar.events()                                                           //run events() to enable year change
+//call the library
+const {YearlyCalendar} = await import(`./YearlyCalendar/YearlyCalendar.js`)
+
+//set the HTML destination element
+const target = "#calendarCtn"     
+
+//set starting year 
+const year = new Date().getFullYear()   
+
+//fire class and set size (compact/full/small) and container width(optional)
+const calendar = new YearlyCalendar({year:year, size:"compact", ctnWidth:"300px"})   
+
+//define variable for target
+const target_ = document.querySelector(target)  
+
+//run init() to get HTML
+target_.innerHTML = calendar.init()   
+
+//run events() to enable year change
+calendar.events()                                                           
 
 
 

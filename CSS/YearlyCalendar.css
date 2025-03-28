@@ -12,10 +12,6 @@
     font-weight:bold;
     font-size:30px;
 }
-.cal-month{
-   padding:1rem;
-   margin: 1rem;
-}
 .cal-monthName{
     text-align:center;
 }
@@ -43,6 +39,11 @@
 .cal-day{
     padding:5px;
     border-radius: 3px;
-    border:1px solid #ccc;
     height:65px;
+}
+.bg-light{
+    background-color: #f7f8fa;
+}
+.bg-grey{
+    background-color:#dcdfe3;
 }
