@@ -1,0 +1,48 @@
+.cal-ctn{
+    justify-content:center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cal-year{
+    text-align:center;
+}
+.cal-yearValue{
+    border:none;
+    text-align:center;
+    font-weight:bold;
+    font-size:30px;
+}
+.cal-month{
+   padding:1rem;
+   margin: 1rem;
+}
+.cal-monthName{
+    text-align:center;
+}
+.cal-days{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px;
+}
+.cal-day{
+    position:relative;
+}
+.cal-dayNo{
+    color:#333634;
+    font-weight:bold;
+    float:right;
+    position:absolute;
+    bottom:5%;
+    right:5%;
+}
+.cal-dayCtn{
+    flex: 1 1 14.2857%; 
+    box-sizing: border-box; 
+    padding:2px;
+}
+.cal-day{
+    padding:5px;
+    border-radius: 3px;
+    border:1px solid #ccc;
+    height:65px;
+}
